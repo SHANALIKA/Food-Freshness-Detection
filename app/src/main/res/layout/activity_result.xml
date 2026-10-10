@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F1FFF5">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="20dp">
+
+
+
+        <!-- Header -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Freshness Result"
+
+            android:textSize="30sp"
+
+            android:textStyle="bold"
+
+            android:textColor="#1B5E20"
+
+            android:layout_gravity="center"/>
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="AI powered food quality analysis"
+
+            android:textSize="15sp"
+
+            android:textColor="#666666"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="5dp"/>
+
+
+
+        <!-- Image Card -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+            android:padding="15dp"
+
+            android:layout_marginTop="25dp"
+
+            android:background="@drawable/rounded_card">
+
+
+
+            <ImageView
+
+                android:id="@+id/resultImage"
+
+                android:layout_width="280dp"
+
+                android:layout_height="280dp"
+
+                android:scaleType="centerCrop"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <!-- Result Card -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="20dp"
+
+            android:layout_marginTop="20dp"
+
+            android:background="#FFFFFF">
+
+
+
+            <TextView
+
+                android:text="Prediction Result"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#2E7D32"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+
+                android:id="@+id/txtPrediction"
+
+                android:text="Fresh Orange"
+
+                android:textSize="24sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#000000"
+
+                android:layout_marginTop="12dp"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <TextView
+
+                android:id="@+id/txtConfidence"
+
+                android:text="Confidence : 95%"
+
+                android:textSize="18sp"
+
+                android:layout_marginTop="15dp"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <!-- Recommendation -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="20dp"
+
+            android:layout_marginTop="20dp"
+
+            android:background="#DFF5E3">
+
+
+
+            <TextView
+
+                android:text="💡 Recommendation"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#1B5E20"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+
+                android:id="@+id/txtRecommendation"
+
+                android:text="Safe to eat"
+
+                android:textSize="18sp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- AI Details -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="20dp"
+
+            android:layout_marginTop="20dp"
+
+            android:background="#FFFFFF">
+
+
+
+            <TextView
+
+                android:text="Analysis Details"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#2E7D32"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+
+                android:text="• Model: CNN Fruit Freshness Detector\n\n• Input Size: 56 x 56 pixels\n\n• Classes: 6 Fruit Categories\n\n• Technology: TensorFlow Lite"
+
+                android:textSize="16sp"
+
+                android:layout_marginTop="15dp"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+
+            android:id="@+id/btnSave"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Save Result"
+
+            android:layout_marginTop="25dp"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
