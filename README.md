@@ -164,3 +164,4 @@ The APK is created at `app/build/outputs/apk/debug/`.
 - A "Looks fresh" result is only a guess from a photo. Do not rely on it for food safety.
 - The current model is weak (see "Improving the model"). Accuracy depends on retraining with more photos.
 - History and Profile screens are not implemented yet. The code has a note to add history saving later.
+"# Food-Freshness-Detection" 
